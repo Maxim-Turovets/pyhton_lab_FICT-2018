@@ -1,9 +1,29 @@
 #task 4
 
-string = "lorem ipsum sit amet consectetur adipisicing elit itaque omnis inventore dolor voluptas totam nobis"
-r=string.split(" ")
+# string = "lorem ipsum sit amet consectetur adipisicing elit itaque omnis inventore dolor voluptas totam nobis"
+# r=string.split(" ")
+# r.sort()
+# print(r)
+
+
+#task 4  v-2
+string = "lorem! ipsum! sit amet consectetur adipisicing elit itaque omnis inventore dolor voluptas totam nobis"
+r=string.split(' ')
+i=0
+
 r.sort()
-print(r)
+def func():
+    global i
+    global r
+
+    print(r[i].strip('!'))
+    i=i+1
+        
+    if(i<len(r)):
+         return func()
+         
+func()         
+
 
 
 #task 5
@@ -26,4 +46,5 @@ def func():
   
     
 func()
+  
   
