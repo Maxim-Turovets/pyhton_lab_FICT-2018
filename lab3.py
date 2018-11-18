@@ -3,7 +3,6 @@ string = "lorem! ipsum! sit amet consectetur adipisicing elit itaque omnis inven
 r=string.split(' ')
 i=0
 
-r.sort()
 def func():
     global i
     global r
