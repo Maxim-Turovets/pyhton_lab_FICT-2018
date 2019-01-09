@@ -2,7 +2,6 @@
 string = "lorem! ipsum! sit amet consectetur adipisicing elit itaque omnis inventore dolor voluptas totam nobis"
 r=string.split(' ')
 i=0
-
 def func():
     global i
     global r
@@ -52,14 +51,10 @@ def func(a, b):
 def part_apply(fn, *args):
  return lambda *other: fn(*args, *other)
 
-
-
 # функция применяет переданную ей одноместную функцию на массив последовательных натуральных чисел (1, 2, 3, ...). 
 # Нужна для того, чтоб построить строку матрицы
 def create_row(fn, st_c, cq):
  return list(map(fn, list(range(st_c, st_c + cq))))
-
-
 
 
 # функция создает, собственно матрицу, последовательно вызывая функцию create_row
