@@ -17,8 +17,6 @@ r.sort()
 func()  
 print(r)   
 
-
-
 #task 5
 import math
 list_=[5,3,9,23,22,14,16,56,25,81,231,144,45,21,225]
